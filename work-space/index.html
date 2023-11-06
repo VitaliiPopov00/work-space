@@ -35,16 +35,21 @@
 
         <div class="container">
             <aside class="filter">
+                <p class="filter__link_mobile">Фильтр <svg width="8" height="6" viewBox="0 0 8 6" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 6L8 0H0L4 6Z" fill="#2A18FF" />
+                    </svg>
+                </p>
                 <form action="#" method="get" class="filter__form">
                     <div class="filter__form__title">
                         <p class="filter__form__title__text">
                             Фильтр
                         </p>
-        
-                        <input type="reset" value="Очистить" class="filter__form__title__reset">
+
+                        <input type="reset" value="Очистить" class="filter__form__reset">
                     </div>
-    
-                    <div class="filter__form_item">
+
+                    <div class="filter__form__item">
                         <label for="city_list">Город</label>
                         <select name="city" id="city_list" class="filter__form_item__input">
                             <option value="Выбрать город" disabled="disabled">Выбрать город</option>
@@ -53,42 +58,58 @@
                             <option value="Архангельск">Архангельск</option>
                         </select>
                     </div>
-    
-                    <div class="filter__form_item">
+
+                    <div class="filter__form__item">
                         <label for="salary">Заработная плата</label>
                         <div class="filter__form_item__salary">
-                            <input type="text" class="filter__form_item__input" name="start_salary" id="salary" placeholder="от">
-                            <input type="text" class="filter__form_item__input" name="end_salary" id="salary" placeholder="до">
+                            <input type="text" class="filter__form_item__input" name="start_salary" id="salary"
+                                placeholder="от">
+                            <input type="text" class="filter__form_item__input" name="end_salary" id="salary"
+                                placeholder="до">
                         </div>
                     </div>
-    
+
                     <div class="filter__form_item">
                         <label for="">Формат</label>
-                        <input type="checkbox" class="filter__form_item__checkbox" name="format_office" id="format_office"><label for="format_office">Офис</label>
-                        <input type="checkbox" class="filter__form_item__checkbox" name="format_remote" id="format_remote"><label for="format_remote">Удаленный</label>
-                        <input type="checkbox" class="filter__form_item__checkbox" name="format_flexible" id="format_flexible"><label for="format_flexible">Гибкий</label>
+                        <input type="checkbox" class="filter__form_item__checkbox" name="format_office"
+                            id="format_office"><label for="format_office">Офис</label>
+                        <input type="checkbox" class="filter__form_item__checkbox" name="format_remote"
+                            id="format_remote"><label for="format_remote">Удаленный</label>
+                        <input type="checkbox" class="filter__form_item__checkbox" name="format_flexible"
+                            id="format_flexible"><label for="format_flexible">Гибкий</label>
                     </div>
-    
-                    <div class="filter__form_item">
+
+                    <div class="filter__form__item">
                         <label for="">Опыт работы</label>
-                        <input type="checkbox" class="filter__form_item__checkbox" name="experience_no_important" id="experience_no_important"><label for="experience_no_important">Не важно</label>
-                        <input type="checkbox" class="filter__form_item__checkbox" name="experience_none" id="experience_none"><label for="experience_none">Без опыта</label>
-                        <input type="checkbox" class="filter__form_item__checkbox" name="experience_middle" id="experience_middle"><label for="experience_middle">От 1 года до 3-х лет</label>
-                        <input type="checkbox" class="filter__form_item__checkbox" name="experience_big" id="experience_big"><label for="experience_big">От 3-х лет</label>
+                        <input type="checkbox" class="filter__form_item__checkbox" name="experience_no_important"
+                            id="experience_no_important"><label for="experience_no_important">Не важно</label>
+                        <input type="checkbox" class="filter__form_item__checkbox" name="experience_none"
+                            id="experience_none"><label for="experience_none">Без опыта</label>
+                        <input type="checkbox" class="filter__form_item__checkbox" name="experience_middle"
+                            id="experience_middle"><label for="experience_middle">От 1 года до 3-х лет</label>
+                        <input type="checkbox" class="filter__form_item__checkbox" name="experience_big"
+                            id="experience_big"><label for="experience_big">От 3-х лет</label>
                     </div>
-    
-                    <div class="filter__form_item">
+
+                    <div class="filter__form__item">
                         <label for="">Занятость</label>
-                        <input type="checkbox" class="filter__form_item__checkbox" name="employment_full" id="employment_full"><label for="employment_full">Полная</label>
-                        <input type="checkbox" class="filter__form_item__checkbox" name="employment_middle" id="employment_middle"><label for="employment_middle">Частичная</label>
-                        <input type="checkbox" class="filter__form_item__checkbox" name="employment_intership" id="employment_intership"><label for="employment_intership">Стажировка</label>
-                        <input type="checkbox" class="filter__form_item__checkbox" name="employment_project" id="employment_project"><label for="employment_project">Проектная работа</label>
+                        <input type="checkbox" class="filter__form_item__checkbox" name="employment_full"
+                            id="employment_full"><label for="employment_full">Полная</label>
+                        <input type="checkbox" class="filter__form_item__checkbox" name="employment_middle"
+                            id="employment_middle"><label for="employment_middle">Частичная</label>
+                        <input type="checkbox" class="filter__form_item__checkbox" name="employment_intership"
+                            id="employment_intership"><label for="employment_intership">Стажировка</label>
+                        <input type="checkbox" class="filter__form_item__checkbox" name="employment_project"
+                            id="employment_project"><label for="employment_project">Проектная работа</label>
                     </div>
-    
-                    <input type="submit" value="Применить">
+
+                    <div class="filter__form__operation">
+                        <input type="submit" class="filter__form__submit" value="Применить">
+                        <input type="reset" class="filter__form__reset" value="Очистить">
+                    </div>
                 </form>
             </aside>
-    
+
             <section class="work-list">
                 <div class="work-list__item">
                     <img src="/img/work_company/logo_company_1.png" alt="img" class="work-list__item__img">
@@ -102,7 +123,7 @@
                         опыт от 3-х лет<br>
                     </p>
                 </div>
-    
+
                 <div class="work-list__item">
                     <img src="/img/work_company/logo_company_2.png" alt="img" class="work-list__item__img">
                     <span class="work-list__item__title">
@@ -115,7 +136,7 @@
                         опыт не важен<br>
                     </p>
                 </div>
-    
+
                 <div class="work-list__item">
                     <img src="/img/work_company/logo_company_3.png" alt="img" class="work-list__item__img">
                     <span class="work-list__item__title">
@@ -128,7 +149,7 @@
                         опыт от 1 года до 3-х лет<br>
                     </p>
                 </div>
-    
+
                 <div class="work-list__item">
                     <img src="/img/work_company/logo_company_1.png" alt="img" class="work-list__item__img">
                     <span class="work-list__item__title">
@@ -141,7 +162,7 @@
                         опыт от 3-х лет<br>
                     </p>
                 </div>
-    
+
                 <div class="work-list__item">
                     <img src="/img/work_company/logo_company_2.png" alt="img" class="work-list__item__img">
                     <span class="work-list__item__title">
@@ -154,7 +175,7 @@
                         опыт не важен<br>
                     </p>
                 </div>
-    
+
                 <div class="work-list__item">
                     <img src="/img/work_company/logo_company_3.png" alt="img" class="work-list__item__img">
                     <span class="work-list__item__title">
@@ -167,7 +188,7 @@
                         опыт от 1 года до 3-х лет<br>
                     </p>
                 </div>
-    
+
                 <div class="work-list__item">
                     <img src="/img/work_company/logo_company_1.png" alt="img" class="work-list__item__img">
                     <span class="work-list__item__title">
@@ -180,7 +201,7 @@
                         опыт от 3-х лет<br>
                     </p>
                 </div>
-    
+
                 <div class="work-list__item">
                     <img src="/img/work_company/logo_company_2.png" alt="img" class="work-list__item__img">
                     <span class="work-list__item__title">
@@ -193,7 +214,7 @@
                         опыт не важен<br>
                     </p>
                 </div>
-    
+
                 <div class="work-list__item">
                     <img src="/img/work_company/logo_company_3.png" alt="img" class="work-list__item__img">
                     <span class="work-list__item__title">
@@ -206,7 +227,7 @@
                         опыт от 1 года до 3-х лет<br>
                     </p>
                 </div>
-    
+
                 <div class="work-list__item">
                     <img src="/img/work_company/logo_company_1.png" alt="img" class="work-list__item__img">
                     <span class="work-list__item__title">
@@ -219,7 +240,7 @@
                         опыт от 3-х лет<br>
                     </p>
                 </div>
-    
+
                 <div class="work-list__item">
                     <img src="/img/work_company/logo_company_2.png" alt="img" class="work-list__item__img">
                     <span class="work-list__item__title">
@@ -232,7 +253,7 @@
                         опыт не важен<br>
                     </p>
                 </div>
-    
+
                 <div class="work-list__item">
                     <img src="/img/work_company/logo_company_3.png" alt="img" class="work-list__item__img">
                     <span class="work-list__item__title">
@@ -266,10 +287,48 @@
 
             <p class="footer_content__dev-info">
                 Designer: Anastasia Ilina<br>
-                Developer:
+                Developer: Vitalii Popov
             </p>
         </div>
     </footer>
+
+
+    <section class="popup">
+        <div class="popup__title">
+            <img src="/img/work_company/logo_company_3.png" alt="img" class="popup__title__img">
+            <div class="popup__title__info">
+                <p>Creative People</p>
+                <span>Графический дизайнер</span>
+            </div>
+        </div>
+        <div class="popup__info">
+            Привет. Мы в CreativePeople ищем middle графического дизайнера в свою дизайн команду. Удаленно, из любой
+            точки нашей страны, где у вас будет хороший интернет. Опыт работы в разработке логотипов, фирменных стилей
+            обязателен.<br>
+            У нас в портфолио много крупных российских компаний, с некоторыми мы работаем уже много лет и делаем самые
+            разные проекты, от сайтов до мобильных приложений.
+        </div>
+        <div class="popup__tags">
+            <span class="popup__tags__item">
+                от 110 000₽
+            </span>
+            <span class="popup__tags__item">
+                проектная работа
+            </span>
+            <span class="popup__tags__item">
+                удаленный
+            </span>
+            <span class="popup__tags__item">
+                опыт от 1 года до 3-х лет
+            </span>
+            <span class="popup__tags__item">
+                Москва
+            </span>
+        </div>
+        <div class="popup__link">
+            Отправляйте резюме на <a href="mailto:CreativePeople@gmail.com">CreativePeople@gmail.com</a>
+        </div>
+    </section>
 </body>
 
 </html>
