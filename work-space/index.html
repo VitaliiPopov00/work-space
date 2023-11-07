@@ -1,542 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header>
-      <div class="header_content container">
-        <div class="header_content__logo">
-          <svg
-            width="17"
-            height="16"
-            viewBox="0 0 17 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="header_content container">
+      <div class="header_content__logo">
+        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 1H16V5" stroke="#171717" stroke-width="1.5" />
+          <path d="M15 13H1V9" stroke="#171717" stroke-width="1.5" />
+          <path d="M5 14.5H10.5" stroke="#171717" stroke-width="2" />
+        </svg>
+
+        <h1 class="header_content__logo__company-name">
+          <span>Work</span> Space
+        </h1>
+      </div>
+
+      <a href="#" class="header_content__btn btn"> Посмотреть вакансии </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="slogan container">
+      <h1 class="slogan__text">
+        Найди работу<br />
+        <span>Своей мечты</span>
+      </h1>
+
+      <img src="img/site/slogan_img.png" alt="img" class="slogan__img" />
+    </section>
+
+    <div class="main_content container">
+      <aside class="filter">
+        <p class="filter__link__mobile no-show">
+          Фильтр
+          <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 6L8 0H0L4 6Z" fill="#2A18FF" />
+          </svg>
+        </p>
+        <form action="#" method="get" class="filter__form">
+          <div class="filter__form__title">
+            <p class="filter__form__title__text">Фильтр</p>
+
+            <input type="reset" value="Очистить" class="filter__form__reset" />
+          </div>
+
+          <div class="filter__form__item">
+            <label for="city_list" class="filter__form__item__label">Город</label>
+            <select name="city" id="city_list" class="filter__form_item__input" style="width: 100%;">
+              <option value="Выбрать город">Выбрать город</option>
+            </select>
+          </div>
+
+          <div class="filter__form__item">
+            <label for="salary" class="filter__form__item__label">Заработная плата</label>
+            <div class="filter__form_item__salary">
+              <input type="text" class="filter__form_item__input" name="start_salary" id="salary" placeholder="от" />
+              <input type="text" class="filter__form_item__input" name="end_salary" id="salary" placeholder="до" />
+            </div>
+          </div>
+
+          <div class="filter__form__item">
+            <label for="" class="filter__form__item__label">Формат</label>
+            <div class="filter__form__item__input__section">
+              <input type="checkbox" class="filter__form_item__checkbox" name="format_office"
+                id="format_office" /><label for="format_office">Офис</label>
+            </div>
+            <div class="filter__form__item__input__section">
+              <input type="checkbox" class="filter__form_item__checkbox" name="format_remote"
+                id="format_remote" /><label for="format_remote">Удаленный</label>
+            </div>
+            <div class="filter__form__item__input__section">
+              <input type="checkbox" class="filter__form_item__checkbox" name="format_flexible"
+                id="format_flexible" /><label for="format_flexible">Гибкий</label>
+            </div>
+          </div>
+
+          <div class="filter__form__item">
+            <label for="" class="filter__form__item__label">Опыт работы</label>
+            <div class="filter__form__item__input__section">
+              <input type="checkbox" class="filter__form_item__checkbox" name="experience_no_important"
+                id="experience_no_important" /><label for="experience_no_important">Не важно</label>
+            </div>
+            <div class="filter__form__item__input__section">
+              <input type="checkbox" class="filter__form_item__checkbox" name="experience_none"
+                id="experience_none" /><label for="experience_none">Без опыта</label>
+            </div>
+
+            <div class="filter__form__item__input__section">
+              <input type="checkbox" class="filter__form_item__checkbox" name="experience_middle"
+                id="experience_middle" /><label for="experience_middle">От 1 года до 3-х лет</label>
+            </div>
+
+            <div class="filter__form__item__input__section">
+              <input type="checkbox" class="filter__form_item__checkbox" name="experience_big"
+                id="experience_big" /><label for="experience_big">От 3-х лет</label>
+            </div>
+          </div>
+
+          <div class="filter__form__item">
+            <label for="" class="filter__form__item__label">Занятость</label>
+            <div class="filter__form__item__input__section">
+              <input type="checkbox" class="filter__form_item__checkbox" name="employment_full"
+                id="employment_full" /><label for="employment_full">Полная</label>
+            </div>
+            <div class="filter__form__item__input__section">
+              <input type="checkbox" class="filter__form_item__checkbox" name="employment_middle"
+                id="employment_middle" /><label for="employment_middle">Частичная</label>
+            </div>
+            <div class="filter__form__item__input__section">
+              <input type="checkbox" class="filter__form_item__checkbox" name="employment_intership"
+                id="employment_intership" /><label for="employment_intership">Стажировка</label>
+            </div>
+            <div class="filter__form__item__input__section">
+              <input type="checkbox" class="filter__form_item__checkbox" name="employment_project"
+                id="employment_project" /><label for="employment_project">Проектная работа</label>
+            </div>
+          </div>
+
+          <div class="filter__form__operation">
+            <input type="submit" class="filter__form__submit btn" value="Применить" />
+            <input type="reset" class="filter__form__reset no-show" value="Очистить" />
+          </div>
+        </form>
+      </aside>
+
+      <section class="work-list">
+        <div class="work-list__item">
+          <img src="img/work_company/logo_company_1.png" alt="img" class="work-list__item__img" />
+          <p class="work-list__item__company">YADRO</p>
+          <p class="work-list__item__title">Инженер</p>
+          <ul class="work-list__item__info">
+            <li>от 150 000₽</li>
+            <li>полная занятость</li>
+            <li>офис</li>
+            <li>опыт от 3-х лет</li>
+          </ul>
+        </div>
+
+        <div class="work-list__item">
+          <img src="img/work_company/logo_company_1.png" alt="img" class="work-list__item__img" />
+          <p class="work-list__item__company">YADRO</p>
+          <p class="work-list__item__title">Инженер</p>
+          <ul class="work-list__item__info">
+            <li>от 150 000₽</li>
+            <li>полная занятость</li>
+            <li>офис</li>
+            <li>опыт от 3-х лет</li>
+          </ul>
+        </div>
+
+        <div class="work-list__item">
+          <img src="img/work_company/logo_company_1.png" alt="img" class="work-list__item__img" />
+          <p class="work-list__item__company">YADRO</p>
+          <p class="work-list__item__title">Инженер</p>
+          <ul class="work-list__item__info">
+            <li>от 150 000₽</li>
+            <li>полная занятость</li>
+            <li>офис</li>
+            <li>опыт от 3-х лет</li>
+          </ul>
+        </div>
+
+        <div class="work-list__item">
+          <img src="img/work_company/logo_company_1.png" alt="img" class="work-list__item__img" />
+          <p class="work-list__item__company">YADRO</p>
+          <p class="work-list__item__title">Инженер</p>
+          <ul class="work-list__item__info">
+            <li>от 150 000₽</li>
+            <li>полная занятость</li>
+            <li>офис</li>
+            <li>опыт от 3-х лет</li>
+          </ul>
+        </div>
+
+        <div class="work-list__item">
+          <img src="img/work_company/logo_company_1.png" alt="img" class="work-list__item__img" />
+          <p class="work-list__item__company">YADRO</p>
+          <p class="work-list__item__title">Инженер</p>
+          <ul class="work-list__item__info">
+            <li>от 150 000₽</li>
+            <li>полная занятость</li>
+            <li>офис</li>
+            <li>опыт от 3-х лет</li>
+          </ul>
+        </div>
+
+        <div class="work-list__item">
+          <img src="img/work_company/logo_company_1.png" alt="img" class="work-list__item__img" />
+          <p class="work-list__item__company">YADRO</p>
+          <p class="work-list__item__title">Инженер</p>
+          <ul class="work-list__item__info">
+            <li>от 150 000₽</li>
+            <li>полная занятость</li>
+            <li>офис</li>
+            <li>опыт от 3-х лет</li>
+          </ul>
+        </div>
+
+        <div class="work-list__item">
+          <img src="img/work_company/logo_company_1.png" alt="img" class="work-list__item__img" />
+          <p class="work-list__item__company">YADRO</p>
+          <p class="work-list__item__title">Инженер</p>
+          <ul class="work-list__item__info">
+            <li>от 150 000₽</li>
+            <li>полная занятость</li>
+            <li>офис</li>
+            <li>опыт от 3-х лет</li>
+          </ul>
+        </div>
+
+        <div class="work-list__item">
+          <img src="img/work_company/logo_company_1.png" alt="img" class="work-list__item__img" />
+          <p class="work-list__item__company">YADRO</p>
+          <p class="work-list__item__title">Инженер</p>
+          <ul class="work-list__item__info">
+            <li>от 150 000₽</li>
+            <li>полная занятость</li>
+            <li>офис</li>
+            <li>опыт от 3-х лет</li>
+          </ul>
+        </div>
+
+        <div class="work-list__item">
+          <img src="img/work_company/logo_company_1.png" alt="img" class="work-list__item__img" />
+          <p class="work-list__item__company">YADRO</p>
+          <p class="work-list__item__title">Инженер</p>
+          <ul class="work-list__item__info">
+            <li>от 150 000₽</li>
+            <li>полная занятость</li>
+            <li>офис</li>
+            <li>опыт от 3-х лет</li>
+          </ul>
+        </div>
+
+        <div class="work-list__item">
+          <img src="img/work_company/logo_company_1.png" alt="img" class="work-list__item__img" />
+          <p class="work-list__item__company">YADRO</p>
+          <p class="work-list__item__title">Инженер</p>
+          <ul class="work-list__item__info">
+            <li>от 150 000₽</li>
+            <li>полная занятость</li>
+            <li>офис</li>
+            <li>опыт от 3-х лет</li>
+          </ul>
+        </div>
+
+        <div class="work-list__item">
+          <img src="img/work_company/logo_company_1.png" alt="img" class="work-list__item__img" />
+          <p class="work-list__item__company">YADRO</p>
+          <p class="work-list__item__title">Инженер</p>
+          <ul class="work-list__item__info">
+            <li>от 150 000₽</li>
+            <li>полная занятость</li>
+            <li>офис</li>
+            <li>опыт от 3-х лет</li>
+          </ul>
+        </div>
+
+        <div class="work-list__item">
+          <img src="img/work_company/logo_company_1.png" alt="img" class="work-list__item__img" />
+          <p class="work-list__item__company">YADRO</p>
+          <p class="work-list__item__title">Инженер</p>
+          <ul class="work-list__item__info">
+            <li>от 150 000₽</li>
+            <li>полная занятость</li>
+            <li>офис</li>
+            <li>опыт от 3-х лет</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer_content container">
+      <div class="footer_content__info-company">
+        <div class="footer_content__info-company__logo">
+          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2 1H16V5" stroke="#171717" stroke-width="1.5" />
             <path d="M15 13H1V9" stroke="#171717" stroke-width="1.5" />
             <path d="M5 14.5H10.5" stroke="#171717" stroke-width="2" />
           </svg>
 
-          <h1 class="header_content__logo__company-name">
+          <h1 class="footer_content__info-company__logo__text">
             <span>Work</span> Space
           </h1>
         </div>
 
-        <a href="#" class="header_content__btn btn"> Посмотреть вакансии </a>
-      </div>
-    </header>
-
-    <main>
-      <section class="slogan container">
-        <h1 class="slogan__text">
-          Найди работу<br />
-          <span>Своей мечты</span>
-        </h1>
-
-        <img src="img/site/slogan_img.png" alt="img" class="slogan__img" />
-      </section>
-
-      <div class="main_content container">
-        <aside class="filter">
-          <p class="filter__link__mobile no-show">
-            Фильтр
-            <svg
-              width="8"
-              height="6"
-              viewBox="0 0 8 6"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M4 6L8 0H0L4 6Z" fill="#2A18FF" />
-            </svg>
-          </p>
-          <form action="#" method="get" class="filter__form">
-            <div class="filter__form__title">
-              <p class="filter__form__title__text">Фильтр</p>
-
-              <input
-                type="reset"
-                value="Очистить"
-                class="filter__form__reset"
-              />
-            </div>
-
-            <div class="filter__form__item">
-              <label for="city_list" class="filter__form__item__label"
-                >Город</label
-              >
-              <select
-                name="city"
-                id="city_list"
-                class="filter__form_item__input"
-                style="width: 100%;"  
-              >
-                <option value="Выбрать город">Выбрать город</option>
-              </select>
-            </div>
-
-            <div class="filter__form__item">
-              <label for="salary" class="filter__form__item__label"
-                >Заработная плата</label
-              >
-              <div class="filter__form_item__salary">
-                <input
-                  type="text"
-                  class="filter__form_item__input"
-                  name="start_salary"
-                  id="salary"
-                  placeholder="от"
-                />
-                <input
-                  type="text"
-                  class="filter__form_item__input"
-                  name="end_salary"
-                  id="salary"
-                  placeholder="до"
-                />
-              </div>
-            </div>
-
-            <div class="filter__form__item">
-              <label for="" class="filter__form__item__label">Формат</label>
-              <div class="filter__form__item__input__section">
-                <input
-                  type="checkbox"
-                  class="filter__form_item__checkbox"
-                  name="format_office"
-                  id="format_office"
-                /><label for="format_office">Офис</label>
-              </div>
-              <div class="filter__form__item__input__section">
-                <input
-                  type="checkbox"
-                  class="filter__form_item__checkbox"
-                  name="format_remote"
-                  id="format_remote"
-                /><label for="format_remote">Удаленный</label>
-              </div>
-              <div class="filter__form__item__input__section">
-                <input
-                  type="checkbox"
-                  class="filter__form_item__checkbox"
-                  name="format_flexible"
-                  id="format_flexible"
-                /><label for="format_flexible">Гибкий</label>
-              </div>
-            </div>
-
-            <div class="filter__form__item">
-              <label for="" class="filter__form__item__label"
-                >Опыт работы</label
-              >
-              <div class="filter__form__item__input__section">
-                <input
-                  type="checkbox"
-                  class="filter__form_item__checkbox"
-                  name="experience_no_important"
-                  id="experience_no_important"
-                /><label for="experience_no_important">Не важно</label>
-              </div>
-              <div class="filter__form__item__input__section">
-                <input
-                  type="checkbox"
-                  class="filter__form_item__checkbox"
-                  name="experience_none"
-                  id="experience_none"
-                /><label for="experience_none">Без опыта</label>
-              </div>
-
-              <div class="filter__form__item__input__section">
-                <input
-                  type="checkbox"
-                  class="filter__form_item__checkbox"
-                  name="experience_middle"
-                  id="experience_middle"
-                /><label for="experience_middle">От 1 года до 3-х лет</label>
-              </div>
-
-              <div class="filter__form__item__input__section">
-                <input
-                  type="checkbox"
-                  class="filter__form_item__checkbox"
-                  name="experience_big"
-                  id="experience_big"
-                /><label for="experience_big">От 3-х лет</label>
-              </div>
-            </div>
-
-            <div class="filter__form__item">
-              <label for="" class="filter__form__item__label">Занятость</label>
-              <div class="filter__form__item__input__section">
-                <input
-                  type="checkbox"
-                  class="filter__form_item__checkbox"
-                  name="employment_full"
-                  id="employment_full"
-                /><label for="employment_full">Полная</label>
-              </div>
-              <div class="filter__form__item__input__section">
-                <input
-                  type="checkbox"
-                  class="filter__form_item__checkbox"
-                  name="employment_middle"
-                  id="employment_middle"
-                /><label for="employment_middle">Частичная</label>
-              </div>
-              <div class="filter__form__item__input__section">
-                <input
-                  type="checkbox"
-                  class="filter__form_item__checkbox"
-                  name="employment_intership"
-                  id="employment_intership"
-                /><label for="employment_intership">Стажировка</label>
-              </div>
-              <div class="filter__form__item__input__section">
-                <input
-                  type="checkbox"
-                  class="filter__form_item__checkbox"
-                  name="employment_project"
-                  id="employment_project"
-                /><label for="employment_project">Проектная работа</label>
-              </div>
-            </div>
-
-            <div class="filter__form__operation">
-              <input
-                type="submit"
-                class="filter__form__submit btn"
-                value="Применить"
-              />
-              <input
-                type="reset"
-                class="filter__form__reset no-show"
-                value="Очистить"
-              />
-            </div>
-          </form>
-        </aside>
-
-        <section class="work-list">
-          <div class="work-list__item">
-            <img
-              src="img/work_company/logo_company_1.png"
-              alt="img"
-              class="work-list__item__img"
-            />
-            <p class="work-list__item__company">YADRO</p>
-            <p class="work-list__item__title">Инженер</p>
-            <p class="work-list__item__info">
-              от 150 000₽<br />
-              полная занятость<br />
-              офис<br />
-              опыт от 3-х лет<br />
-            </p>
-          </div>
-
-          <div class="work-list__item">
-            <img
-              src="img/work_company/logo_company_1.png"
-              alt="img"
-              class="work-list__item__img"
-            />
-            <p class="work-list__item__company">YADRO</p>
-            <p class="work-list__item__title">Инженер</p>
-            <p class="work-list__item__info">
-              от 150 000₽<br />
-              полная занятость<br />
-              офис<br />
-              опыт от 3-х лет<br />
-            </p>
-          </div>
-
-          <div class="work-list__item">
-            <img
-              src="img/work_company/logo_company_1.png"
-              alt="img"
-              class="work-list__item__img"
-            />
-            <p class="work-list__item__company">YADRO</p>
-            <p class="work-list__item__title">Инженер</p>
-            <p class="work-list__item__info">
-              от 150 000₽<br />
-              полная занятость<br />
-              офис<br />
-              опыт от 3-х лет<br />
-            </p>
-          </div>
-
-          <div class="work-list__item">
-            <img
-              src="img/work_company/logo_company_1.png"
-              alt="img"
-              class="work-list__item__img"
-            />
-            <p class="work-list__item__company">YADRO</p>
-            <p class="work-list__item__title">Инженер</p>
-            <p class="work-list__item__info">
-              от 150 000₽<br />
-              полная занятость<br />
-              офис<br />
-              опыт от 3-х лет<br />
-            </p>
-          </div>
-
-          <div class="work-list__item">
-            <img
-              src="img/work_company/logo_company_1.png"
-              alt="img"
-              class="work-list__item__img"
-            />
-            <p class="work-list__item__company">YADRO</p>
-            <p class="work-list__item__title">Инженер</p>
-            <p class="work-list__item__info">
-              от 150 000₽<br />
-              полная занятость<br />
-              офис<br />
-              опыт от 3-х лет<br />
-            </p>
-          </div>
-
-          <div class="work-list__item">
-            <img
-              src="img/work_company/logo_company_1.png"
-              alt="img"
-              class="work-list__item__img"
-            />
-            <p class="work-list__item__company">YADRO</p>
-            <p class="work-list__item__title">Инженер</p>
-            <p class="work-list__item__info">
-              от 150 000₽<br />
-              полная занятость<br />
-              офис<br />
-              опыт от 3-х лет<br />
-            </p>
-          </div>
-
-          <div class="work-list__item">
-            <img
-              src="img/work_company/logo_company_1.png"
-              alt="img"
-              class="work-list__item__img"
-            />
-            <p class="work-list__item__company">YADRO</p>
-            <p class="work-list__item__title">Инженер</p>
-            <p class="work-list__item__info">
-              от 150 000₽<br />
-              полная занятость<br />
-              офис<br />
-              опыт от 3-х лет<br />
-            </p>
-          </div>
-
-          <div class="work-list__item">
-            <img
-              src="img/work_company/logo_company_1.png"
-              alt="img"
-              class="work-list__item__img"
-            />
-            <p class="work-list__item__company">YADRO</p>
-            <p class="work-list__item__title">Инженер</p>
-            <p class="work-list__item__info">
-              от 150 000₽<br />
-              полная занятость<br />
-              офис<br />
-              опыт от 3-х лет<br />
-            </p>
-          </div>
-
-          <div class="work-list__item">
-            <img
-              src="img/work_company/logo_company_1.png"
-              alt="img"
-              class="work-list__item__img"
-            />
-            <p class="work-list__item__company">YADRO</p>
-            <p class="work-list__item__title">Инженер</p>
-            <p class="work-list__item__info">
-              от 150 000₽<br />
-              полная занятость<br />
-              офис<br />
-              опыт от 3-х лет<br />
-            </p>
-          </div>
-
-          <div class="work-list__item">
-            <img
-              src="img/work_company/logo_company_1.png"
-              alt="img"
-              class="work-list__item__img"
-            />
-            <p class="work-list__item__company">YADRO</p>
-            <p class="work-list__item__title">Инженер</p>
-            <p class="work-list__item__info">
-              от 150 000₽<br />
-              полная занятость<br />
-              офис<br />
-              опыт от 3-х лет<br />
-            </p>
-          </div>
-
-          <div class="work-list__item">
-            <img
-              src="img/work_company/logo_company_1.png"
-              alt="img"
-              class="work-list__item__img"
-            />
-            <p class="work-list__item__company">YADRO</p>
-            <p class="work-list__item__title">Инженер</p>
-            <p class="work-list__item__info">
-              от 150 000₽<br />
-              полная занятость<br />
-              офис<br />
-              опыт от 3-х лет<br />
-            </p>
-          </div>
-
-          <div class="work-list__item">
-            <img
-              src="img/work_company/logo_company_1.png"
-              alt="img"
-              class="work-list__item__img"
-            />
-            <p class="work-list__item__company">YADRO</p>
-            <p class="work-list__item__title">Инженер</p>
-            <p class="work-list__item__info">
-              от 150 000₽<br />
-              полная занятость<br />
-              офис<br />
-              опыт от 3-х лет<br />
-            </p>
-          </div>
-
-          <div class="work-list__item">
-            <img
-              src="img/work_company/logo_company_1.png"
-              alt="img"
-              class="work-list__item__img"
-            />
-            <p class="work-list__item__company">YADRO</p>
-            <p class="work-list__item__title">Инженер</p>
-            <p class="work-list__item__info">
-              от 150 000₽<br />
-              полная занятость<br />
-              офис<br />
-              опыт от 3-х лет<br />
-            </p>
-          </div>
-
-          <div class="work-list__item">
-            <img
-              src="img/work_company/logo_company_1.png"
-              alt="img"
-              class="work-list__item__img"
-            />
-            <p class="work-list__item__company">YADRO</p>
-            <p class="work-list__item__title">Инженер</p>
-            <p class="work-list__item__info">
-              от 150 000₽<br />
-              полная занятость<br />
-              офис<br />
-              опыт от 3-х лет<br />
-            </p>
-          </div>
-
-          <div class="work-list__item">
-            <img
-              src="img/work_company/logo_company_1.png"
-              alt="img"
-              class="work-list__item__img"
-            />
-            <p class="work-list__item__company">YADRO</p>
-            <p class="work-list__item__title">Инженер</p>
-            <p class="work-list__item__info">
-              от 150 000₽<br />
-              полная занятость<br />
-              офис<br />
-              опыт от 3-х лет<br />
-            </p>
-          </div>
-        </section>
-      </div>
-    </main>
-
-    <footer>
-      <div class="footer_content container">
-        <div class="footer_content__info-company">
-          <div class="footer_content__info-company__logo">
-            <svg
-              width="17"
-              height="16"
-              viewBox="0 0 17 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M2 1H16V5" stroke="#171717" stroke-width="1.5" />
-              <path d="M15 13H1V9" stroke="#171717" stroke-width="1.5" />
-              <path d="M5 14.5H10.5" stroke="#171717" stroke-width="2" />
-            </svg>
-
-            <h1 class="footer_content__info-company__logo__text">
-              <span>Work</span> Space
-            </h1>
-          </div>
-
-          <p class="footer_content__info-company__copyright">
-            © Work Space, 2023
-          </p>
-        </div>
-
-        <p class="footer_content__dev-info">
-            Designer: Anastasia Ilina<br>
-            Developer: Vitalii Popov
+        <p class="footer_content__info-company__copyright">
+          © Work Space, 2023
         </p>
       </div>
-    </footer>
 
-    <section class="popup no-show">
-      <div class="popup__title">
-        <img
-          src="img/work_company/logo_company_3.png"
-          alt="img"
-          class="popup__title__img"
-        />
-        <div class="popup__title__info">
-          <p>Creative People</p>
-          <span>Графический дизайнер</span>
-        </div>
+      <p class="footer_content__dev-info">
+        Designer: Anastasia Ilina<br>
+        Developer: Vitalii Popov
+      </p>
+    </div>
+  </footer>
+
+  <section class="popup no-show">
+    <div class="popup__title">
+      <img src="img/work_company/logo_company_3.png" alt="img" class="popup__title__img" />
+      <div class="popup__title__info">
+        <p>Creative People</p>
+        <span>Графический дизайнер</span>
       </div>
-      <div class="popup__info">
-        Привет. Мы в CreativePeople ищем middle графического дизайнера в свою
-        дизайн команду. Удаленно, из любой точки нашей страны, где у вас будет
-        хороший интернет. Опыт работы в разработке логотипов, фирменных стилей
-        обязателен.<br />
-        У нас в портфолио много крупных российских компаний, с некоторыми
-        мы работаем уже много лет и делаем самые разные проекты, от сайтов
-        до мобильных приложений.
-      </div>
-      <div class="popup__tags">
-        <span class="popup__tags__item"> от 110 000₽ </span>
-        <span class="popup__tags__item"> проектная работа </span>
-        <span class="popup__tags__item"> удаленный </span>
-        <span class="popup__tags__item"> опыт от 1 года до 3-х лет </span>
-        <span class="popup__tags__item"> Москва </span>
-      </div>
-      <div class="popup__link">
-        Отправляйте резюме на
-        <a href="mailto:CreativePeople@gmail.com">CreativePeople@gmail.com</a>
-      </div>
-    </section>
-  </body>
+    </div>
+    <div class="popup__info">
+      Привет. Мы в CreativePeople ищем middle графического дизайнера в свою
+      дизайн команду. Удаленно, из любой точки нашей страны, где у вас будет
+      хороший интернет. Опыт работы в разработке логотипов, фирменных стилей
+      обязателен.<br />
+      У нас в портфолио много крупных российских компаний, с некоторыми
+      мы работаем уже много лет и делаем самые разные проекты, от сайтов
+      до мобильных приложений.
+    </div>
+    <div class="popup__tags">
+      <span class="popup__tags__item"> от 110 000₽ </span>
+      <span class="popup__tags__item"> проектная работа </span>
+      <span class="popup__tags__item"> удаленный </span>
+      <span class="popup__tags__item"> опыт от 1 года до 3-х лет </span>
+      <span class="popup__tags__item"> Москва </span>
+    </div>
+    <div class="popup__link">
+      Отправляйте резюме на
+      <a href="mailto:CreativePeople@gmail.com">CreativePeople@gmail.com</a>
+    </div>
+  </section>
+</body>
+
 </html>

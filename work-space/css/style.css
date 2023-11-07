@@ -6,7 +6,6 @@
 
 /* RESET END */
 
-
 html {
     box-sizing: border-box;
     position: relative;
@@ -15,7 +14,9 @@ html {
     color: #171717;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     box-sizing: inherit;
 }
 
@@ -50,7 +51,7 @@ header {
     font-size: 20px;
 }
 
-.header_content__logo__company-name > span{
+.header_content__logo__company-name>span {
     color: #2A18FF;
     font-weight: 600;
 }
@@ -63,6 +64,7 @@ header {
     padding: 12px 32px;
     border-radius: 8px;
 }
+
 /* HEADER END */
 
 
@@ -85,7 +87,7 @@ main {
     line-height: 108px;
 }
 
-.slogan__text > span {
+.slogan__text>span {
     color: #2A18FF;
 }
 
@@ -115,6 +117,10 @@ main {
     font-size: 14px;
 }
 
+.filter__form__reset:hover {
+    cursor: pointer;
+}
+
 .filter__form__item {
     display: flex;
     flex-direction: column;
@@ -139,7 +145,7 @@ main {
 }
 
 .filter__form_item__input:focus {
-    border: 1px solid #A6ADFF; 
+    border: 1px solid #A6ADFF;
 }
 
 .filter__form_item__input::placeholder {
@@ -173,6 +179,8 @@ main {
     border-radius: 4px;
     background-color: #A6ADFF;
     padding: 8px 24px;
+    width: 125px;
+    height: 32px;
 }
 
 .work-list {
@@ -190,7 +198,7 @@ main {
     font-size: 14px;
     display: flex;
     flex-direction: column;
-    padding: 16px 0px 16px 16px;
+    padding: 16px;
 }
 
 .work-list__item:hover {
@@ -199,7 +207,7 @@ main {
 }
 
 .work-list__item:active {
-    border: 2px solid #A6ADFF; 
+    border: 2px solid #A6ADFF;
 }
 
 .work-list__item__img {
@@ -210,6 +218,7 @@ main {
 
 .work-list__item__company {
     font-size: 20px;
+    margin-bottom: 8px;
 }
 
 .work-list__item__title {
@@ -217,18 +226,14 @@ main {
     padding: 3px 5px;
     width: fit-content;
     border-radius: 4px;
-}
-
-.work-list__item > p {
     margin-bottom: 8px;
 }
 
-.work-list__item > p:last-child {
-    margin-bottom: 0;
-}
-
 .work-list__item__info {
+    list-style-type:  none;
     color: #ccc;
+    display: flex;
+    flex-direction: column;
 }
 
 /* MAIN END */
@@ -257,7 +262,7 @@ footer {
     margin-bottom: 27px;
 }
 
-.footer_content__info-company__logo__text > span {
+.footer_content__info-company__logo__text>span {
     color: #A6ADFF;
 }
 
@@ -283,6 +288,7 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 /* POPUP END */
 
 
