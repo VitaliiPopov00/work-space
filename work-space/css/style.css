@@ -1,0 +1,315 @@
+/* RESET START */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* RESET END */
+
+
+html {
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #171717;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #F3F4F8;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1180px;
+}
+
+
+/* HEADER START */
+header {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.header_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_content__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header_content__logo__company-name {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.header_content__logo__company-name > span{
+    color: #2A18FF;
+    font-weight: 600;
+}
+
+.header_content__btn {
+    width: 285px;
+    height: 48px;
+    text-decoration: none;
+    background-color: #A6ADFF;
+    padding: 12px 32px;
+    border-radius: 8px;
+}
+/* HEADER END */
+
+
+
+/* MAIN START */
+main {
+    margin-bottom: 100px;
+}
+
+.slogan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.slogan__text {
+    text-transform: uppercase;
+    font-size: 90px;
+    line-height: 108px;
+}
+
+.slogan__text > span {
+    color: #2A18FF;
+}
+
+.main_content {
+    display: flex;
+    gap: 20px;
+}
+
+.filter__form {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    font-size: 14px;
+}
+
+.filter__form__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter__form__reset {
+    border: none;
+    background-color: transparent;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.filter__form__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter__form__item__label {
+    margin-bottom: 12px;
+}
+
+.filter__form_item__input {
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    background-color: #fff;
+    height: 32px;
+    padding-left: 16px;
+    width: 135px;
+}
+
+.filter__form_item__input:hover {
+    background-color: #F9FAFF;
+}
+
+.filter__form_item__input:focus {
+    border: 1px solid #A6ADFF; 
+}
+
+.filter__form_item__input::placeholder {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.filter__form_item__salary {
+    display: flex;
+    gap: 10px;
+}
+
+.filter__form__item__input__section {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.filter__form__item__input__section:last-child {
+    margin-bottom: 0;
+}
+
+.filter__form_item__checkbox {
+    height: 20px;
+    width: 20px;
+}
+
+.filter__form__submit {
+    border: none;
+    border-radius: 4px;
+    background-color: #A6ADFF;
+    padding: 8px 24px;
+}
+
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.work-list__item {
+    transition: .2s;
+    border-radius: 16px;
+    width: 280px;
+    height: 220px;
+    background-color: #fff;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0px 16px 16px;
+}
+
+.work-list__item:hover {
+    transition: 0s;
+    background-color: #F9FAFF;
+}
+
+.work-list__item:active {
+    border: 2px solid #A6ADFF; 
+}
+
+.work-list__item__img {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 12px;
+}
+
+.work-list__item__company {
+    font-size: 20px;
+}
+
+.work-list__item__title {
+    background-color: #EAECFF;
+    padding: 3px 5px;
+    width: fit-content;
+    border-radius: 4px;
+}
+
+.work-list__item > p {
+    margin-bottom: 8px;
+}
+
+.work-list__item > p:last-child {
+    margin-bottom: 0;
+}
+
+.work-list__item__info {
+    color: #ccc;
+}
+
+/* MAIN END */
+
+
+
+/* FOOTER START */
+footer {
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_content__info-company__logo__text {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.footer_content__info-company__logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 27px;
+}
+
+.footer_content__info-company__logo__text > span {
+    color: #A6ADFF;
+}
+
+.footer_content__info-company__copyright {
+    margin-bottom: 22px;
+}
+
+.footer_content__dev-info {
+    align-self: flex-end;
+    line-height: 2;
+}
+
+/* FOOTER END */
+
+
+
+
+
+/* POPUP START */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* POPUP END */
+
+
+
+/* ВСПОМОГАТЕЛЬНЫЕ КЛАССЫЕ */
+.no-show {
+    display: none;
+}
+
+.background {
+    background-color: #000;
+    opacity: .5;
+}
+
+.btn {
+    box-sizing: border-box;
+    transition: .2s;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #2A18FF;
+}
+
+.btn:active {
+    color: #171717;
+    transition: 0s;
+    border: 2px solid #4F58BE;
+    background-color: #A6ADFF;
+}
